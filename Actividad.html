@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad0</title>
+</head>
+<body>
+  
+<table border="4">
+    <tr>
+        <th>Nombre de Producto</th>
+        <th>Precio</th>
+        <th>Descripcion</th>
+        <th>Imagen</th>
+    </tr>
+    <tr>
+        <td>Samsung 8</td>
+        <td>240€</td>
+        <td> 
+            <ul>
+                <li>4 nucleos</li>
+                <li>17 megapixeles</li>
+                <li>5 pulgadas</li>
+            </ul>
+        </td>
+        <!-- Las imagenes no aparecen debido a que lo estamos buscando en el mismo sitio en el que esta nuestro archivo,
+         para que pueda funcionar lo recomendable seria crear una carpeta con este archivo y las imagenes, asi saldran-->
+        <td><img src="Samsung.jpg" alt="Samsung" width="100px" height="130px"></td>
+    </tr>
+    <tr>
+        <td>
+            Xiaomi Redmi 9
+        </td>
+        <td>180€</td>
+        <td>
+            <ul>
+                <li>8 nucleos</li>
+                <li>15 megapixeles</li>
+                <li>5,5 pulgadas</li>
+            </ul>
+        </td>
+        <td><img src="Xiaomi.jpg" alt="Xiaomi" width="100px" height="130px"></td>
+
+    </tr>
+    <tr>
+        <td>Iphone 12</td>
+        <td>420€</td>
+        <td> 
+            <ul>
+                <li>16 nucleos</li>
+                <li>23 megapixeles</li>
+                <li>6 pulgadas</li>
+            </ul>
+        </td>
+        <td><img src="Iphone.jpg" alt="Iphone" width="100px" height="130px"></td>
+
+    </tr>
+    <tr>
+        <td>Sony Pro16</td>
+        <td>145€</td>
+        <td> 
+            <ul>
+                <li>2 nucleos</li>
+                <li>10 megapixeles</li>
+                <li>5 pulgadas</li>
+            </ul>
+        </td>
+        <td><img src="Sony.jpg" alt="Sony" width="100px" height="130px"></td>
+
+    </tr>
+
+</table>
+
+<!-- Problemas:
+ 1. En los campos de nombre y apellido no quiero que haya numeros asi que tengo que ponerlos tipo text
+ 2. Al contrario es con el telefono, que quiero que sean numeros asi que tiene que ser tipo number
+ 3. En el campo telefono, tengo que controlar el maximo, dado que un numero de telefono tiene 9 digitos, asi que uso el max
+  -->
+<form>
+<br>
+<label for="nombre">nombre</label>
+<input type="text" name="nombre" id="nombre" maxlength="50">
+<br><br>
+<label for="apellido">apellido</label>
+<input type="text" name="apellido" id="apellido" maxlength="50">
+<br><br>
+<label for="telefono">telefono</label>
+<input type="number" name="telefono" id="telefono" max="999999999">
+<br><br>
+<input type="submit" value="Enviar">
+</form>
+
+</body>
+
+</html>
